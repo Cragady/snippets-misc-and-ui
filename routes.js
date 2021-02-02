@@ -18,7 +18,6 @@ router.route('/')
 router.route('/s-glass-hf')
     .get((req, res) => {
         res.render('partials/shiny-glass-hover-front/glass')
-        res.end()
     })
 
 router.route("/:pId/:cId")
