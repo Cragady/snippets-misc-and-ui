@@ -1,0 +1,31 @@
+{
+  "name": "snippets-misc-and-ui",
+  "version": "1.0.0",
+  "description": "This repository will be home of some snippets I find fascinating.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cragady/snippets-misc-and-ui.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cragady/snippets-misc-and-ui/issues"
+  },
+  "homepage": "https://github.com/Cragady/snippets-misc-and-ui#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.2",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "node-sass": "^5.0.0",
+    "pug": "^3.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7",
+    "sass": "^1.32.5"
+  }
+}

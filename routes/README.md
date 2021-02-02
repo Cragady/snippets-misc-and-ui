@@ -1,0 +1,1 @@
+As of right now, this directory serves no real purpose. If the routes.js file expands to be a bit too unwieldy, I'll abstract the routes.js file out to this directory.

@@ -1,0 +1,21 @@
+extends ../../index.pug
+
+block head-style
+    link(rel = 'stylesheet', type='text/css', href='/srv/fontawesome/css/all.min.css')
+    script(defer src='/srv/fontawesome/js/all.min.js')
+    link(rel='stylesheet', type='text/css', href='/css/shiny-glass-hover-front/glass.css')
+
+block snippet
+    main
+        .ruler
+        .container
+            a.icon(href="#")
+                i.fas.fa-phone
+            a.icon(href="#")
+                i.fas.fa-images
+            a.icon(href="#")
+                i.fas.fa-envelope-open
+            a.icon(href="#")
+                i.fas.fa-comment
+            a.icon(href="#")
+                i.fas.fa-music
