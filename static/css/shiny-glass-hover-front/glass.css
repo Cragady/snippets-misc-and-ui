@@ -1,26 +1,11 @@
-:root {
-  --foreground-color: white;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  overflow: hidden;
-}
-
-main {
+main.glass-main {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
   background: linear-gradient(322deg, #ba4aff, rgba(186, 74, 255, 0) 70%), linear-gradient(178deg, #008aff, rgba(0, 138, 255, 0) 70%), linear-gradient(24deg, #00ffc6, rgba(0, 255, 198, 0) 35%);
 }
 
-.ruler {
+.glass-ruler {
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   background-color: rgba(255, 255, 255, 0.5);
   position: absolute;
@@ -30,12 +15,12 @@ main {
   right: 0%;
 }
 
-.container {
+.glass-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 1.25rem;
 }
-.container .icon {
+.glass-container .icon {
   --size: 6rem;
   --transition-duration: 500ms;
   --transition-easing: ease-out;
@@ -55,7 +40,7 @@ main {
   transition: transform var(--transition-duration) var(--transition-easing);
   overflow: hidden;
 }
-.container .icon::before {
+.glass-container .icon::before {
   content: "";
   background: rgba(255, 255, 255, 0.4);
   width: 60%;
@@ -66,10 +51,10 @@ main {
   position: absolute;
   transition: left var(--transition-duration) var(--transition-easing);
 }
-.container .icon:hover {
+.glass-container .icon:hover {
   transform: translateY(-25%);
 }
-.container .icon:hover::before {
+.glass-container .icon:hover::before {
   left: 150%;
 }
 

@@ -3,11 +3,13 @@ html(lang="en")
     head
         title #{ title }
         link(rel="stylesheet", type="text/css", href="/css/main-layout.css")
-        block head-style
+        link(rel = 'stylesheet', type='text/css', href='/css/navbar/navbar.css')
+        link(rel = 'stylesheet', type='text/css', href='/srv/fontawesome/css/all.min.css')
+        script(defer src='/srv/fontawesome/js/all.min.js')
+        link(rel='stylesheet', type='text/css', href='/css/shiny-glass-hover-front/glass.css')
 
-    body
+    body        
         section
-            h2 Layout
             block content
                 h3 This is a test.
     
