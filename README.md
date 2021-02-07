@@ -14,3 +14,15 @@ I am using `pug` for the templating, and `sass` for handling css. Pug is entirel
 # Technologies and Packages in Snippets
 
 * Font Awesome
+* https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap
+
+# Workflow
+
+Give executable privileges to sassy-script.sh:
+* `chmod +x sassy-script.sh`
+
+Execute sassy-script.sh:
+* `./sassy-script.sh`
+
+Start the node server (in different terminal, unless you're using background processes):
+* `npx nodemon app`
