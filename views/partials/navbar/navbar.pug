@@ -1,3 +1,8 @@
+//- I'm unsure why, but pug is duplicating an html element
+//- when a dropdown is used. I may have to look into 
+//- SCSS/pug to find out why. For now I'll just use
+//- jQuery to remove the element. 
+
 block navbar
     main(class="navbar-top")
         header(class="nav-header version-1")
@@ -6,17 +11,27 @@ block navbar
             nav
                 ul
                     li
-                        a(href="/s-glass-hf")
-                            i.fa.fa-glasses
-                            | Glass Hover
+                        a(href="#").nav-dropdown.dropdown-snippets.dupe
+                            i.nav-item.fa.fa-bars
+                            | Snippets
+                            .nav-dropdown-content.dropdown-snippets-content
+                                a(href="/")
+                                    i.nav-item.fa.fa-home
+                                    | Home
+                                a(href="/s-glass-hf")
+                                    i.nav-item.fa.fa-glasses
+                                    | Glass Hover
                     li
-                        a(href="#")
-                            i.far.fa-edit
-                            | Placeholder
-                    li
-                        a(href="#")
-                            i.far.fa-envelope-open
-                            | Placeholder
+                        a(href="#").nav-dropdown.dropdown-notes.dupe
+                            i.nav-item.far.fa-edit
+                            | Notes
+                            .nav-dropdown-content.dropdown-notes-content
+                                a(href="/")
+                                    i.nav-item.fa.fa-home
+                                    | Home
+                                a(href="#")
+                                    i.nav-item.fa.fa-glasses
+                                    | Placeholder
             a.user.nav-user(href="#")
                 i.far.fa-user
                 | Placeholder
