@@ -105,7 +105,8 @@ class Orb {
 
     // PIXI.Graphics is used to draw 2d primitives (in this case a circle) to the canvas
     this.graphics = new PIXI.Graphics();
-    this.graphics.alpha = 0.825;
+    // this.graphics.alpha = 0.825; // original
+    this.graphics.alpha = 0.2; // new
 
     // 250ms after the last window resize event, recalculate orb positions.
     window.addEventListener(
@@ -123,7 +124,7 @@ class Orb {
     // the { x, y } origin for each orb (the bottom right of the screen)
     // const originX = window.innerWidth / 1.25; // original
     const originX = window.innerWidth / 2; // new
-    const originY = window.innerHeight / 1.25; // new
+    const originY = window.innerHeight / 1.4; // new
     // const originY = // original
     //   window.innerWidth < 1000
     //     ? window.innerHeight
