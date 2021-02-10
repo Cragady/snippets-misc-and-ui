@@ -3,7 +3,8 @@
     to the `routes/` directory.
 */
 
-const router = require("express").Router();
+const router = require('express').Router(),
+    path = require('path');
 
 // router.route("/")
 //     .get()
@@ -18,6 +19,11 @@ router.route('/')
 router.route('/s-glass-hf')
     .get((req, res) => {
         res.render('partials/shiny-glass-hover-front/glass')
+    })
+
+router.route('/pixi')
+    .get((req, res) => {
+        res.render('partials/pixi/pixi')
     })
 
 router.route("/:pId/:cId")
