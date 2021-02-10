@@ -6,19 +6,21 @@ block snippet
     .overlay
         .overlay__inner
             h1.overlay__title
-                | Text Here 
-            span.text-gradient more text 
-                | Even more text
+                | Pixi Effect
+            p.text-gradient This is a really cool text effect, 
+                | the text here is affected by pixi. It has 
+                | similar colors to the floating orbs.
 
-        p.overlay__description
-            | Lotsa text 
-        strong.pixi-strong More text 
+            p.overlay__description
+                | I'll have to play around with the javascript 
+                | file to change things up.
+            strong.pixi-strong More text 
 
-        .overlay__btns
-            button.overlay_btn.overlay__btn--transparent
-                a(href="#", target="_blank").pixi-a
-                    | Humdinger
+            .overlay__btns
+                //- button.overlay_btn.overlay__btn--transparent
+                //-     a(href="#").pixi-a
+                //-         | Humdinger
 
-            button.overlay__btn.overlay__btn--colors
-                span Randomize Colors
-                span.overlay__btn-emoji 🖌️
+                button.overlay__btn.overlay__btn--colors
+                    span Randomize Colors
+                    span.overlay__btn-emoji 🖌️

@@ -121,11 +121,13 @@ class Orb {
     const maxDist =
       window.innerWidth < 1000 ? window.innerWidth / 3 : window.innerWidth / 5;
     // the { x, y } origin for each orb (the bottom right of the screen)
-    const originX = window.innerWidth / 1.25;
-    const originY =
-      window.innerWidth < 1000
-        ? window.innerHeight
-        : window.innerHeight / 1.375;
+    // const originX = window.innerWidth / 1.25; // original
+    const originX = window.innerWidth / 2; // new
+    const originY = window.innerHeight / 1.25; // new
+    // const originY = // original
+    //   window.innerWidth < 1000
+    //     ? window.innerHeight
+    //     : window.innerHeight / 1.375;
 
     // allow each orb to move x distance away from it's x / y origin
     return {
